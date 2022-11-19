@@ -1,10 +1,13 @@
 import React from "react";
-import { chakra, Box, Flex, SimpleGrid, Icon, Image, Container } from "@chakra-ui/react";
-
+import { chakra, Box, Button, Flex, SimpleGrid, Icon, Image, Container } from "@chakra-ui/react";
+import NextLink from "next/link";
 import { FiExternalLink } from "react-icons/fi";
 import { ChatIcon } from "@chakra-ui/icons";
 
+
 export default function Hero(){
+  
+    
   return (
     <SimpleGrid columns={{ base: 1, md: 2 }} p="4" spacing={0} zIndex={-1}>
       <Flex borderRadius="xl"  zIndex={-1} bg="brand.900">
@@ -18,7 +21,7 @@ export default function Hero(){
           h={{ base: 64, md: "full" }}
           bg="gray.800"
           loading="lazy"
-          opacity={0.6}
+          opacity={0.7}
           
         />
 
@@ -29,7 +32,7 @@ export default function Hero(){
         justifyContent="center"
         px={{ base: 4, md: 8, lg: 20 }}
         py={8}
-        zIndex={-1}
+        zIndex={0}
       >
         <chakra.span
           color="brand.600"
@@ -61,6 +64,8 @@ export default function Hero(){
         >
           Entregamos en Mar del Plata y alrededores.
         </chakra.p>
+       
+        <NextLink zIndex={1} legacyBehavior href={`https://wa.me/5491168678515?`}>
         <Box display="inline-flex" rounded="md" shadow="md">
           <chakra.a
             mt={2}
@@ -77,7 +82,7 @@ export default function Hero(){
             bg="brand.900"
             _dark={{ bg: "brand.500" }}
             _hover={{
-              bg: "brand.700",
+              bg: "brand.800",
               _dark: { bg: "brand.600" },
             }}
           >
@@ -85,6 +90,9 @@ export default function Hero(){
             <Icon as={ChatIcon} ml={2} />
           </chakra.a>
         </Box>
+        </NextLink>
+       
+
       </Flex>
     </SimpleGrid>
   );
