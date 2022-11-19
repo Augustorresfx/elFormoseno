@@ -46,16 +46,7 @@ export default function Navbar(){
         <Flex alignItems="center" justifyContent="space-between" mx="auto" zIndex={4}>
           <HStack display="flex" spacing={3} alignItems="center">
             <Box display={{ base: "inline-flex", md: "none" }}>
-              <IconButton
-                display={{ base: "flex", md: "none" }}
-                aria-label="Open menu"
-                fontSize="20px"
-                color="white"
-                _dark={{ color: "inherit" }}
-                variant="ghost"
-                icon={<AiOutlineMenu />}
-                onClick={mobileNav.onOpen}
-              />
+          
               <VStack
                 pos="absolute"
                 top={0}
@@ -98,6 +89,7 @@ export default function Navbar(){
                   Contáctenos
                 </Button>
               </VStack>
+              
             </Box>
             
             <chakra.a
@@ -109,9 +101,15 @@ export default function Navbar(){
             >
               <Image w="14" src="https://i.postimg.cc/pXfyn7CN/logo-formoseno-blanco.png"/>
               <VisuallyHidden>El Formoseño</VisuallyHidden>
-                 <Text fontWeight="semibold" fontFamily="Merriweather" fontSize="xl" ml={{ base:"4" , md:"10" }} mt={{ base: "4", md: "6" }} color="white" >
+                 <VStack spacing="0" mt={{base:"2", md:"2"}}>
+                 <Text fontWeight="semibold" fontFamily="Merriweather" fontSize="xl" ml={{ base:"4" , md:"6" }} mt={{ base: "4", md: "6" }} color="white" >
               El Formoseño
-            </Text></chakra.a>
+            </Text>
+            <Text fontWeight="thin" fontFamily="Poppins" fontSize="2xs" ml={{ base:"2", md:"4" }} color="white" >
+             Carbón, leña y postes.
+            </Text>
+            </VStack>
+            </chakra.a>
        
             <HStack pl="6"spacing={6} display={{ base: "none", md: "flex" }} >
               <Button mt={{ base: "4", md: "6" }} variant="ghost" color="white"  size="sm">
@@ -137,7 +135,17 @@ export default function Navbar(){
             display={mobileNav.isOpen ? "none" : "flex"}
             alignItems="center"
           >
-        
+            <IconButton
+                display={{ base: "flex", md: "none" }}
+                aria-label="Open menu"
+                fontSize="20px"
+                pr="6"
+                color="white"
+                _dark={{ color: "inherit" }}
+                variant="ghost"
+                icon={<AiOutlineMenu />}
+                onClick={mobileNav.onOpen}
+              />
 
           
           </HStack>
