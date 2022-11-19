@@ -54,7 +54,7 @@ export default function Navbar(){
               display="flex"
               alignItems="center"
             >
-              <Image w="14" src="https://i.postimg.cc/pXfyn7CN/logo-formoseno-blanco.png"/>
+              <Image alt="El Formoseño logo" w="14" src="https://i.postimg.cc/pXfyn7CN/logo-formoseno-blanco.png"/>
               <VisuallyHidden>El Formoseño</VisuallyHidden>
                  <VStack spacing="0" mt={{base:"2", md:"2"}}>
                  <Text fontWeight="semibold" fontFamily="Merriweather" fontSize="xl" ml={{ base:"4" , md:"6" }} mt={{ base: "4", md: "6" }} color="white" >
@@ -67,7 +67,7 @@ export default function Navbar(){
             </chakra.a>
             <AnimatePresence>
             {mobileNav.isOpen && (
-            <Box as={motion.div} initial={{ opacity:0}} animate={{ opacity:1 }} exit={{ opacity:0 }} display={{ base: "inline-flex", md: "none" }}>
+            <Box as={motion.div} initial={{ opacity:0 }} animate={{ opacity:1 }} exit={{ opacity:0 }} display={{ base: "inline-flex", md: "none" }}>
           
               <VStack
                 pos="absolute"

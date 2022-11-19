@@ -38,7 +38,7 @@ export default function Hero(){
           textTransform="uppercase"
           fontWeight="extrabold"
         >
-          Tenemos el
+          Tenemos
         </chakra.span>
         <chakra.h1
           mb={4}
@@ -49,7 +49,7 @@ export default function Hero(){
           lineHeight="shorter"
           textShadow="2px 0 currentcolor"
         >
-          Mejor carbón de leña
+          Carbón de leña de madera del norte
         </chakra.h1>
         <chakra.p
           pr={{ base: 0, lg: 16 }}
@@ -59,7 +59,7 @@ export default function Hero(){
           _dark={{ color: "gray.400" }}
           letterSpacing="wider"
         >
-          De Mar del Plata y alrededores.
+          Entregamos en Mar del Plata y alrededores.
         </chakra.p>
         <Box display="inline-flex" rounded="md" shadow="md">
           <chakra.a

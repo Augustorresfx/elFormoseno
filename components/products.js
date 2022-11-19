@@ -62,6 +62,7 @@ export default function Products(){
       w="full"
       fit="contain"
       mt={2}
+      pb={2}
       src="https://i.postimg.cc/901Cj1kD/bolsadecarbon.png"
       alt="NIKE AIR"
     />
@@ -97,7 +98,7 @@ export default function Products(){
       </chakra.button>
     </Flex>
   </Box>
-</Flex>;
+</Flex>
 
         </Grid>
         </>
