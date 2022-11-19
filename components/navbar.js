@@ -17,6 +17,8 @@ import {
   Text
 } from "@chakra-ui/react";
 
+import { motion, AnimatePresence } from 'framer-motion'
+
 import {
   AiOutlineMenu,
   AiFillHome,
@@ -45,7 +47,27 @@ export default function Navbar(){
         
         <Flex alignItems="center" justifyContent="space-between" mx="auto" zIndex={4}>
           <HStack display="flex" spacing={3} alignItems="center">
-            <Box display={{ base: "inline-flex", md: "none" }}>
+          <chakra.a
+              pl={{base: "4", md: "6" }}
+              href="/"
+              title="El Formoseño página web"
+              display="flex"
+              alignItems="center"
+            >
+              <Image w="14" src="https://i.postimg.cc/pXfyn7CN/logo-formoseno-blanco.png"/>
+              <VisuallyHidden>El Formoseño</VisuallyHidden>
+                 <VStack spacing="0" mt={{base:"2", md:"2"}}>
+                 <Text fontWeight="semibold" fontFamily="Merriweather" fontSize="xl" ml={{ base:"4" , md:"6" }} mt={{ base: "4", md: "6" }} color="white" >
+              El Formoseño
+            </Text>
+            <Text fontWeight="thin" fontFamily="Poppins" fontSize="2xs" ml={{ base:"2", md:"4" }} color="white" >
+             Carbón, leña y postes.
+            </Text>
+            </VStack>
+            </chakra.a>
+            <AnimatePresence>
+            {mobileNav.isOpen && (
+            <Box as={motion.div} initial={{ opacity:0}} animate={{ opacity:1 }} exit={{ opacity:0 }} display={{ base: "inline-flex", md: "none" }}>
           
               <VStack
                 pos="absolute"
@@ -91,25 +113,9 @@ export default function Navbar(){
               </VStack>
               
             </Box>
-            
-            <chakra.a
-              pl={{base: "4", md: "6" }}
-              href="/"
-              title="El Formoseño página web"
-              display="flex"
-              alignItems="center"
-            >
-              <Image w="14" src="https://i.postimg.cc/pXfyn7CN/logo-formoseno-blanco.png"/>
-              <VisuallyHidden>El Formoseño</VisuallyHidden>
-                 <VStack spacing="0" mt={{base:"2", md:"2"}}>
-                 <Text fontWeight="semibold" fontFamily="Merriweather" fontSize="xl" ml={{ base:"4" , md:"6" }} mt={{ base: "4", md: "6" }} color="white" >
-              El Formoseño
-            </Text>
-            <Text fontWeight="thin" fontFamily="Poppins" fontSize="2xs" ml={{ base:"2", md:"4" }} color="white" >
-             Carbón, leña y postes.
-            </Text>
-            </VStack>
-            </chakra.a>
+            )}
+            </AnimatePresence>
+           
        
             <HStack pl="6"spacing={6} display={{ base: "none", md: "flex" }} >
               <Button mt={{ base: "4", md: "6" }} variant="ghost" color="white"  size="sm">
@@ -142,7 +148,7 @@ export default function Navbar(){
                 pr="6"
                 color="white"
                 _dark={{ color: "inherit" }}
-                variant="ghost"
+                variant="inline"
                 icon={<AiOutlineMenu />}
                 onClick={mobileNav.onOpen}
               />
