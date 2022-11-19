@@ -13,7 +13,11 @@ const colors = {
   },
 }
 
-const theme = extendTheme({ colors })
+const theme = extendTheme({ colors,
+  fonts: {
+    heading: `'Merriweather', serif`,
+  }
+})
 
 // 3. Pass the `theme` prop to the `ChakraProvider`
 function MyApp({ Component, pageProps }) {

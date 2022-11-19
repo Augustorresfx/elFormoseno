@@ -6,17 +6,17 @@ import { ChatIcon } from "@chakra-ui/icons";
 
 export default function Hero(){
   return (
-    <SimpleGrid columns={{ base: 1, md: 2 }} mt={{ base:2, md:4}} spacing={1} zIndex={-1}>
+    <SimpleGrid columns={{ base: 1, md: 2 }} p="4" spacing={0} zIndex={-1}>
       <Flex borderRadius="xl"  zIndex={-1} bg="brand.900">
 
         <Image
         borderRadius="xl" 
           src="https://i.postimg.cc/v89RvxK9/20220829-180637.jpg"
-          alt="3 women looking at a laptop"
+          alt="Carbón, leña y postes El Formoseño"
           fit="cover"
           w="full"
           h={{ base: 64, md: "full" }}
-          bg="gray.100"
+          bg="gray.800"
           loading="lazy"
           opacity={0.6}
           

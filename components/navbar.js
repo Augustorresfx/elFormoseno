@@ -63,9 +63,9 @@ export default function Navbar(){
                 right={0}
                 display={mobileNav.isOpen ? "flex" : "none"}
                 flexDirection="column"
-                p={2}
+                pt={4}
                 pb={4}
-                m={2}
+             
                 bg={bg}
                 spacing={3}
                 rounded="sm"
@@ -101,6 +101,7 @@ export default function Navbar(){
             </Box>
             
             <chakra.a
+              pl={{base: "4", md: "6" }}
               href="/"
               title="El Formoseño página web"
               display="flex"
@@ -108,11 +109,11 @@ export default function Navbar(){
             >
               <Image w="14" src="https://i.postimg.cc/pXfyn7CN/logo-formoseno-blanco.png"/>
               <VisuallyHidden>El Formoseño</VisuallyHidden>
-                 <Text fontSize="xl" ml={{ base:"4" , md:"10" }} mt={{ base: "4", md: "6" }} color="white" >
+                 <Text fontWeight="semibold" fontFamily="Merriweather" fontSize="xl" ml={{ base:"4" , md:"10" }} mt={{ base: "4", md: "6" }} color="white" >
               El Formoseño
             </Text></chakra.a>
        
-            <HStack left="20"spacing={2} display={{ base: "none", md: "flex" }} >
+            <HStack pl="6"spacing={6} display={{ base: "none", md: "flex" }} >
               <Button mt={{ base: "4", md: "6" }} variant="ghost" color="white"  size="sm">
                 Por qué elegirnos
               </Button>
