@@ -55,6 +55,8 @@ align="center"
 justify="center"
 id="contact">
 <Box
+ 
+    
  textAlign={{ base: "left", md: "center" }}
   borderRadius="lg"
   m={{ base: 5, md: 16, lg: 10 }}
@@ -116,6 +118,9 @@ id="contact">
         </Stack>
 
         <Box
+            border={'1px'}
+            borderColor="black"
+            boxShadow={'6px 6px 0 black'}
           bg={useColorModeValue('white', 'brand.600')}
           borderRadius="lg"
           p={8}

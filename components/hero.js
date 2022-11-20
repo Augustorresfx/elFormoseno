@@ -10,11 +10,15 @@ export default function Hero(){
     
   return (
     <SimpleGrid columns={{ base: 1, md: 2 }} p="4" spacing={0} zIndex={-1}>
-      <Flex borderRadius="xl"  zIndex={-1} bg="brand.900">
+      <Flex borderRadius="xl"     
+    border={'2px'}
+    borderColor="black"
+    boxShadow={'6px 6px 0 black'} zIndex={-1} bg="yellow.100">
 
         <Image
+           
         borderRadius="xl" 
-          src="https://i.postimg.cc/v89RvxK9/20220829-180637.jpg"
+          src="https://www.energiaonline.com.ar/wp-content/uploads/2021/06/Lena-scaled.jpg"
           alt="Carbón, leña y postes El Formoseño"
           fit="cover"
           w="full"
