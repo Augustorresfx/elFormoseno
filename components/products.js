@@ -1,5 +1,5 @@
 import { Grid, Flex, Box, chakra, Image } from '@chakra-ui/react'
-
+import Link from 'next/link'
 export default function Products(){
     return(
         <>
@@ -23,6 +23,7 @@ export default function Products(){
   justifyContent="center"
 >
   <Box
+ 
     maxW="xs"
     mx="auto"
     bg="white"
@@ -31,8 +32,11 @@ export default function Products(){
     }}
     shadow="lg"
     rounded="lg"
+    border={'1px'}
+    borderColor="black"
+    boxShadow={'6px 6px 0 black'}
   >
-    <Box px={4} py={2}>
+    <Box  px={4} py={2}>
       <chakra.h1
         color="gray.800"
         _dark={{
@@ -72,18 +76,19 @@ export default function Products(){
       justifyContent="space-between"
       px={4}
       py={2}
-      bg="gray.900"
+      bg="white"
       roundedBottom="lg"
     >
       <chakra.h1 color="white" fontWeight="bold" fontSize="lg">
         
       </chakra.h1>
+      <Link href="https://wa.me/5491168678515?">
       <chakra.button
         px={2}
         py={1}
-        bg="white"
+        bg="brand.900"
         fontSize="xs"
-        color="gray.900"
+        color="white"
         fontWeight="bold"
         rounded="lg"
         textTransform="uppercase"
@@ -96,6 +101,7 @@ export default function Products(){
       >
         Consultar
       </chakra.button>
+      </Link>
     </Flex>
   </Box>
 </Flex>
@@ -118,6 +124,9 @@ export default function Products(){
     }}
     shadow="lg"
     rounded="lg"
+    border={'1px'}
+    borderColor="black"
+    boxShadow={'6px 6px 0 black'}
   >
     <Box px={4} py={2}>
       <chakra.h1
@@ -159,23 +168,24 @@ export default function Products(){
       justifyContent="space-between"
       px={4}
       py={2}
-      bg="gray.900"
+      bg="white"
       roundedBottom="lg"
     >
       <chakra.h1 color="white" fontWeight="bold" fontSize="lg">
         
       </chakra.h1>
+      <Link href="https://wa.me/5491168678515?">
       <chakra.button
         px={2}
         py={1}
-        bg="white"
+        bg="brand.900"
         fontSize="xs"
-        color="gray.900"
+        color="white"
         fontWeight="bold"
         rounded="lg"
         textTransform="uppercase"
         _hover={{
-          bg: "gray.200",
+          bg: "gray.900",
         }}
         _focus={{
           bg: "gray.400",
@@ -183,6 +193,7 @@ export default function Products(){
       >
         Consultar
       </chakra.button>
+      </Link>
     </Flex>
   </Box>
 </Flex>
