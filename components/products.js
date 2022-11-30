@@ -62,12 +62,12 @@ export default function Products(){
     </Box>
 
     <Image
-      h={48}
+      h={64}
       w="full"
-      fit="contain"
+      fit="cover"
       mt={2}
       pb={2}
-      src="https://i.postimg.cc/901Cj1kD/bolsadecarbon.png"
+      src="https://i.postimg.cc/fbMgTdZZ/Paper-Bag-1.png"
       alt="Carbon de leña del norte"
     />
 

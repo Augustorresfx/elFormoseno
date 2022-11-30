@@ -1,31 +1,34 @@
-import React from "react";
+import React, { useRef } from "react";
 import { chakra, Box, Button, Flex, SimpleGrid, Icon, Image, Container } from "@chakra-ui/react";
 import NextLink from "next/link";
 import { FiExternalLink } from "react-icons/fi";
 import { ChatIcon } from "@chakra-ui/icons";
+import { ParallaxBanner, useParallax } from "react-scroll-parallax";
 
 
 export default function Hero(){
   
+  return (<>
+  
+
     
-  return (
-    <SimpleGrid columns={{ base: 1, md: 2 }} p="4" spacing={0} zIndex={-1}>
+    <SimpleGrid bgGradient='linear(#dddddd 20%, #dcdcdc 50%, #d7d7d7 75%)' columns={{ base: 1, md: 2 }} p="4" spacing={0} zIndex={-1}>
+
       <Flex borderRadius="xl"     
-    border={'2px'}
-    borderColor="black"
-    boxShadow={'6px 6px 0 black'} zIndex={-1} bg="yellow.100">
+
+  >
 
         <Image
            
         borderRadius="xl" 
-          src="https://www.energiaonline.com.ar/wp-content/uploads/2021/06/Lena-scaled.jpg"
+          src="https://i.postimg.cc/Bn54pn7P/Paper-Bag-1.jpg"
           alt="Carbón, leña y postes El Formoseño"
           fit="cover"
           w="full"
           h={{ base: 64, md: "full" }}
-          bg="gray.800"
+          bg="gray.00"
           loading="lazy"
-          opacity={0.7}
+          opacity={1}
           
         />
 
@@ -99,6 +102,7 @@ export default function Hero(){
 
       </Flex>
     </SimpleGrid>
+    </>
   );
 };
 
