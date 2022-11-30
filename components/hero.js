@@ -92,7 +92,7 @@ export default function Hero(){
           alt="Carbón, leña y postes El Formoseño"
           fit="contain"
      
-          marginLeft={{ base:30, md:0 }}
+          marginLeft={{ base:32, md:4 }}
           w={{ base: 290, md: "70%" }}
          
           h={{ base: 290, md: "90%" }}
