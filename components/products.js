@@ -9,6 +9,7 @@ export default function Products(){
  columnGap={{ base: "16px", lg: "22px" }}
  justifyItems="center"
  bg="#edf3f8"
+ alignItems="center"
  padding={{ base: "0 16px" }}
  paddingTop="40px"
       >
@@ -62,12 +63,13 @@ export default function Products(){
     </Box>
 
     <Image
-      h={64}
-      w="full"
-      fit="cover"
+     pl={{ base: 12, md: 20,  }}
+      h="40%"
+      w="70%"
+      fit="contain"
       mt={2}
       pb={2}
-      src="https://i.postimg.cc/fbMgTdZZ/Paper-Bag-1.png"
+      src="https://i.postimg.cc/XqRbv6wT/bolsa-png.png"
       alt="Carbon de leña del norte"
     />
 

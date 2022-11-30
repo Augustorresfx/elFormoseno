@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { chakra, Box, Button, Flex, SimpleGrid, Icon, Image, Container } from "@chakra-ui/react";
+import { chakra, Box, Button, Flex, SimpleGrid, Icon, Image, Container, Divider } from "@chakra-ui/react";
 import NextLink from "next/link";
 import { FiExternalLink } from "react-icons/fi";
 import { ChatIcon } from "@chakra-ui/icons";
@@ -12,34 +12,17 @@ export default function Hero(){
   
 
     
-    <SimpleGrid bgGradient='linear(#dddddd 20%, #dcdcdc 50%, #d7d7d7 75%)' columns={{ base: 1, md: 2 }} p="4" spacing={0} zIndex={-1}>
+    <SimpleGrid bg="000000" columns={{ base: 1, md: 2 }} p="4" spacing={0} zIndex={-1}>
 
-      <Flex borderRadius="xl"     
-
-  >
-
-        <Image
-           
-        borderRadius="xl" 
-          src="https://i.postimg.cc/Bn54pn7P/Paper-Bag-1.jpg"
-          alt="Carbón, leña y postes El Formoseño"
-          fit="cover"
-          w="full"
-          h={{ base: 64, md: "full" }}
-          bg="gray.00"
-          loading="lazy"
-          opacity={1}
-          
-        />
-
-      </Flex>
+      
       <Flex
         direction="column"
         alignItems="start"
         justifyContent="center"
         px={{ base: 4, md: 8, lg: 20 }}
         py={8}
-        zIndex={0}
+       
+        zIndex={-1}
       >
         <chakra.span
           color="brand.600"
@@ -101,7 +84,29 @@ export default function Hero(){
        
 
       </Flex>
+      <Flex >     
+        <Image
+           
+        borderRadius="xl" 
+          src="https://i.postimg.cc/3RGYpwnt/bolsapng.png"
+          alt="Carbón, leña y postes El Formoseño"
+          fit="contain"
+     
+          marginLeft={{ base:30, md:0 }}
+          w={{ base: 290, md: "70%" }}
+         
+          h={{ base: 290, md: "90%" }}
+        
+          loading="lazy"
+          opacity={1}
+          
+        />
+
+      </Flex>
+     
+   
     </SimpleGrid>
+      <Divider orientation='horizontal' />
     </>
   );
 };

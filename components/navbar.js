@@ -14,7 +14,8 @@ import {
   CloseButton,
   Avatar,
   Image,
-  Text
+  Text,
+  Collapse
 } from "@chakra-ui/react";
 
 import { motion, AnimatePresence } from 'framer-motion'
@@ -65,6 +66,7 @@ export default function Navbar(){
             </Text>
             </VStack>
             </chakra.a>
+            
             <AnimatePresence>
             {mobileNav.isOpen && (
             <Box as={motion.div} initial={{ opacity:0 }} animate={{ opacity:1 }} exit={{ opacity:0 }} display={{ base: "inline-flex", md: "none" }}>
@@ -115,7 +117,7 @@ export default function Navbar(){
             </Box>
             )}
             </AnimatePresence>
-           
+     
        
             <HStack pl="6"spacing={6} display={{ base: "none", md: "flex" }} >
               <Button mt={{ base: "4", md: "6" }} variant="ghost" color="white"  size="sm">
