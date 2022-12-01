@@ -1,18 +1,10 @@
 import React from "react";
 
-import { Box, Button, chakra, Flex, SimpleGrid } from "@chakra-ui/react";
+import { Box, Button, chakra, Flex, Image, SimpleGrid } from "@chakra-ui/react";
 
 export default function AboutUs(){
   return (
-    <Flex
-      bg="#edf3f8"
-      _dark={{ bg: "#3e3e3e" }}
-      p={20}
-      w="full"
-      justifyContent="center"
-      alignItems="center"
-      pos="absolute"
-    >
+
       <Box
         shadow="xl"
         bg="white"
@@ -32,8 +24,8 @@ export default function AboutUs(){
             <chakra.h2
               mb={4}
               fontSize={{ base: "2xl", md: "4xl" }}
-              fontWeight="extrabold"
-              letterSpacing="tight"
+              fontWeight="semibold"
+              letterSpacing="normal"
               textAlign={{ base: "center", md: "left" }}
               color="gray.900"
               _dark={{ color: "gray.400" }}
@@ -68,10 +60,12 @@ export default function AboutUs(){
           <Box
             w="full"
             h="full"
-            py={48}
+            py={0}
             bg="gray.200"
             _dark={{ bg: "gray.700" }}
-          ></Box>
+          >
+            <Image src="https://i.postimg.cc/Hsz2ghh6/fire-7539572-1920.jpg"/>
+          </Box>
         </SimpleGrid>
         <SimpleGrid
           alignItems="center"
@@ -92,7 +86,7 @@ export default function AboutUs(){
               _dark={{ color: "gray.400" }}
               lineHeight={{ md: "shorter" }}
             >
-              Decide how you integrate Payments
+              Acompañamos tus asados
             </chakra.h2>
             <chakra.p
               mb={5}
@@ -101,9 +95,7 @@ export default function AboutUs(){
               _dark={{ color: "gray.400" }}
               fontSize={{ md: "lg" }}
             >
-              Love to code? Next to our ready-made and free plugins you can use
-              our expansive yet simple API; decide how you integrate Payments
-              and build advanced and reliable products yourself from scratch.
+              Nos centramos en mantener la calidad de nuestro producto.
             </chakra.p>
             <Button
               w={{ base: "full", sm: "auto" }}
@@ -120,12 +112,15 @@ export default function AboutUs(){
           <Box
             w="full"
             h="full"
-            py={48}
+           
             bg="gray.200"
             _dark={{ bg: "gray.700" }}
-          ></Box>
+            
+          >
+            <Image src="https://i.postimg.cc/WpWzcm7M/bbq-4373644-1920.jpg"/>
+          </Box>
         </SimpleGrid>
       </Box>
-    </Flex>
+
   );
 };
