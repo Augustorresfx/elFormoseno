@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import AboutUs from '../components/aboutUs'
 import ContactForm from '../components/contact'
 import Footer from '../components/footer'
 import Hero from '../components/hero'
@@ -13,6 +14,7 @@ export default function Home() {
     <Navbar/>
 
     <Hero/>
+    <AboutUs/>
     <Products/>
     <ContactForm/>
     <Footer/>

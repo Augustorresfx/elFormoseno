@@ -13,7 +13,22 @@ export default function Hero(){
 
     
     <SimpleGrid bg="000000" columns={{ base: 1, md: 2 }} p="4" spacing={0} zIndex={-1}>
+    <Flex >     
+        <Image
+           
+        borderRadius="xl" 
+          src="https://i.postimg.cc/JhCX93Q1/Paper-Bag-2.png"
+          alt="Carbón, leña y postes El Formoseño"
+          fit="contain"
+     
+   
+        
+          loading="lazy"
+          opacity={1}
+          
+        />
 
+      </Flex>
       
       <Flex
         direction="column"
@@ -84,25 +99,7 @@ export default function Hero(){
        
 
       </Flex>
-      <Flex >     
-        <Image
-           
-        borderRadius="xl" 
-          src="https://i.postimg.cc/3RGYpwnt/bolsapng.png"
-          alt="Carbón, leña y postes El Formoseño"
-          fit="contain"
-     
-          marginLeft={{ base:32, md:4 }}
-          w={{ base: 290, md: "70%" }}
-         
-          h={{ base: 290, md: "90%" }}
-        
-          loading="lazy"
-          opacity={1}
-          
-        />
 
-      </Flex>
      
    
     </SimpleGrid>
