@@ -26,7 +26,7 @@ export default function AboutUs(){
               fontSize={{ base: "2xl", md: "4xl" }}
               fontWeight="semibold"
               letterSpacing="normal"
-              textAlign={{ base: "center", md: "left" }}
+              textAlign={{ base: "left", md: "left" }}
               color="gray.900"
               _dark={{ color: "gray.400" }}
               lineHeight={{ md: "shorter" }}
@@ -36,7 +36,7 @@ export default function AboutUs(){
             </chakra.h2>
             <chakra.p
               mb={5}
-              textAlign={{ base: "center", sm: "left" }}
+              textAlign={{ base: "left", sm: "left" }}
               color="gray.600"
               _dark={{ color: "gray.400" }}
               fontSize={{ md: "lg" }}
@@ -68,7 +68,7 @@ export default function AboutUs(){
               fontSize={{ base: "2xl", md: "4xl" }}
               fontWeight="extrabold"
               letterSpacing="tight"
-              textAlign={{ base: "center", md: "left" }}
+              textAlign={{ base: "left", md: "left" }}
               color="gray.900"
               _dark={{ color: "gray.400" }}
               lineHeight={{ md: "shorter" }}
@@ -77,12 +77,12 @@ export default function AboutUs(){
             </chakra.h2>
             <chakra.p
               mb={5}
-              textAlign={{ base: "center", sm: "left" }}
+              textAlign={{ base: "left", sm: "left" }}
               color="gray.600"
               _dark={{ color: "gray.400" }}
               fontSize={{ md: "lg" }}
             >
-              Nos centramos en mantener una buena calidad en nuestros productos.
+              Ideal para los amantes de disfrutar en familia.
             </chakra.p>
           
           </Box>

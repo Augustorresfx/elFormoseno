@@ -3,7 +3,23 @@ import Link from 'next/link'
 export default function Products(){
     return(
         <>
-
+        
+  <chakra.h2  
+  bg="white"
+              mt={24}
+              ml={{base: 0, md:4, lg:8, }}
+              mb={12}
+              fontSize={{ base: "2xl", md: "4xl" }}
+              fontWeight="extrabold"
+              letterSpacing="tight"
+              textAlign={{ base: "center", md: "left" }}
+              color="gray.900"
+              _dark={{ color: "gray.400" }}
+              lineHeight={{ md: "shorter" }}
+            >
+            Nuestros Productos
+            </chakra.h2>
+           
          <Grid
  templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(3, 1fr)", lg: "repeat(1, 1fr)", xl: "repeat(3, 1fr)"}}
  columnGap={{ base: "16px", lg: "22px" }}
@@ -21,7 +37,7 @@ export default function Products(){
         maxW={'250'}
         maxH={''}
         w={'full'}
-        bg='gray.100'
+        bg='white'
         boxShadow={'2xl'}
         rounded={'lg'}
         pos={'relative'}
@@ -78,7 +94,7 @@ export default function Products(){
         maxW={'250'}
         maxH={''}
         w={'full'}
-        bg='gray.100'
+        bg='white'
         boxShadow={'2xl'}
         rounded={'lg'}
         pos={'relative'}
@@ -135,7 +151,7 @@ export default function Products(){
         maxW={'250'}
         maxH={''}
         w={'full'}
-        bg='gray.100'
+        bg='white'
         boxShadow={'2xl'}
         rounded={'lg'}
         pos={'relative'}
