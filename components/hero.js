@@ -78,6 +78,7 @@ export default function Hero(){
             alignItems="center"
             justifyContent="center"
             px={5}
+            href="https://wa.me/5491168678515?"
             py={3}
             border="solid transparent"
             fontWeight="bold"
