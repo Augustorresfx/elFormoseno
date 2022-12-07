@@ -59,13 +59,13 @@ import {
             <Flex direction={{ base: "column", md: "row" }} gap={{ base: "2", md: "12" }}>
             <Flex  justify="start" direction="column">
            
-              <Link mt={6} textTransform="uppercase">Por qué elegirnos</Link>
-              <Link textTransform="uppercase">Dónde nos ubicamos</Link>
+              <Link href="#PorQueElegirnos" mt={6} textTransform="uppercase">Por qué elegirnos</Link>
+              <Link href="#Productos" textTransform="uppercase">Nuestros Productos</Link>
             </Flex>
 
             <Flex  justify="start" direction="column">
-              <Link mt={6} textTransform="uppercase">Contáctenos</Link>
-              <Link textTransform="uppercase">Contácte al desarrollador</Link>
+              <Link href="#Contactenos" mt={6} textTransform="uppercase">Contáctenos</Link>
+              <Link hreF="https://wa.me/5491122503326?" textTransform="uppercase">Contácte al desarrollador</Link>
               </Flex>
               </Flex>
           </HStack>

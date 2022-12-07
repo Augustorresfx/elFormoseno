@@ -184,7 +184,7 @@ id="contact">
                       type="submit"
                       colorScheme="white"
                       bgGradient="linear(to-r, brand.900, brand.900)"
-                      
+                      rightIcon={<TbMailForward/>}
                       color="white"
                       _hover={{
                         bg: 'brand.800',
@@ -193,7 +193,7 @@ id="contact">
                       >
                       Enviar Mensaje
                       
-                      <TbMailForward/>
+                    
                     </Button>
                   </VStack>
                   </form>

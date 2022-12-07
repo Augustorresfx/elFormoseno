@@ -14,9 +14,15 @@ export default function Home() {
     <Navbar/>
 
     <Hero/>
+    <section id='PorQueElegirnos'>
     <AboutUs/>
+    </section>
+    <section id="Productos">
     <Products/>
+    </section>
+    <section id="Contactenos">
     <ContactForm/>
+    </section>
     <Footer/>
   </>
   )

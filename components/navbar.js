@@ -15,7 +15,8 @@ import {
   Avatar,
   Image,
   Text,
-  Collapse
+  Collapse,
+  Link
 } from "@chakra-ui/react";
 
 import { motion, AnimatePresence } from 'framer-motion'
@@ -93,25 +94,31 @@ export default function Navbar(){
                   justifySelf="self-end"
                   onClick={mobileNav.onClose}
                 />
+                <Link href="#PorQueElegirnos">
                 <Button color="white" w="full" variant="ghost">
                   Por qué elegirnos
                 </Button>
+                </Link>
+                <a href="#Productos">
                 <Button
                   w="full"
                   variant="ghost"
                   color="white"
                   
                 >
-                  Dónde nos ubicamos
+                  Nuestros productos
                 </Button>
+                </a>
+                <a href="#Contactenos">
                 <Button
                   w="full"
                   variant="ghost"
                   color="white"
-                  leftIcon={<ChatIcon />}
+                  
                 >
                   Contáctenos
                 </Button>
+                </a>
               </VStack>
               
             </Box>
@@ -119,23 +126,32 @@ export default function Navbar(){
             </AnimatePresence>
      
        
-            <HStack pl="6"spacing={6} display={{ base: "none", md: "flex" }} >
-              <Button mt={{ base: "4", md: "6" }} variant="ghost" color="white"  size="sm">
-                Por qué elegirnos
-              </Button>
-              <Button  top="3" variant="ghost" color="white"  size="sm">
-                Dónde nos ubicamos
-              </Button>
-          
-              <Button
-                color="white"
-                variant="ghost"
-                leftIcon={<ChatIcon />}
-                size="sm"
-                top="3"
-              >
-                Contáctenos
-              </Button>
+            <HStack pt="6" pl="6"spacing={6} display={{ base: "none", md: "flex" }} >
+            <a href="#PorQueElegirnos">
+                <Button color="white" w="full" variant="ghost">
+                  Por qué elegirnos
+                </Button>
+                </a>
+                <a href="#Productos">
+                <Button
+                  w="full"
+                  variant="ghost"
+                  color="white"
+                  
+                >
+                  Nuestros productos
+                </Button>
+                </a>
+                <a href="#Contactenos">
+                <Button
+                  w="full"
+                  variant="ghost"
+                  color="white"
+                  
+                >
+                  Contáctenos
+                </Button>
+                </a>
             </HStack>
           </HStack>
           <HStack

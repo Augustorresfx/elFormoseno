@@ -32,7 +32,7 @@ export default function AboutUs(){
               lineHeight={{ md: "shorter" }}
               textShadow="2px 0 currentcolor"
             >
-              Clear overview for efficient tracking
+              Perfecto para calefaccionar
             </chakra.h2>
             <chakra.p
               mb={5}
@@ -41,21 +41,9 @@ export default function AboutUs(){
               _dark={{ color: "gray.400" }}
               fontSize={{ md: "lg" }}
             >
-              Handle your subscriptions and transactions efficiently with the
-              clear overview in Dashboard. Features like the smart search option
-              allow you to quickly find any data you’re looking for.
+             Lorem ipsum dolor sit amet consectetur adipiscing elit, vel convallis facilisi habitasse malesuada tempus non condimentum, curae euismod cursus mattis nam nascetur.
             </chakra.p>
-            <Button
-              w={{ base: "full", sm: "auto" }}
-              size="lg"
-              bg="gray.900"
-              _dark={{ bg: "gray.700" }}
-              _hover={{ bg: "gray.700", _dark: { bg: "gray.600" } }}
-              color="gray.100"
-              as="a"
-            >
-              Learn More
-            </Button>
+          
           </Box>
           <Box
             w="full"
@@ -95,19 +83,9 @@ export default function AboutUs(){
               _dark={{ color: "gray.400" }}
               fontSize={{ md: "lg" }}
             >
-              Nos centramos en mantener la calidad de nuestro producto.
+              Nos centramos en mantener una buena calidad en nuestros productos.
             </chakra.p>
-            <Button
-              w={{ base: "full", sm: "auto" }}
-              size="lg"
-              bg="gray.900"
-              _dark={{ bg: "gray.700" }}
-              _hover={{ bg: "gray.700", _dark: { bg: "gray.600" } }}
-              color="gray.100"
-              as="a"
-            >
-              Learn More
-            </Button>
+          
           </Box>
           <Box
             w="full"

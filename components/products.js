@@ -1,11 +1,11 @@
-import { Grid, Flex, Box, chakra, Image } from '@chakra-ui/react'
+import { Grid, Flex, Box, chakra, HStack, Image, Center, Stack, Heading, Text } from '@chakra-ui/react'
 import Link from 'next/link'
 export default function Products(){
     return(
         <>
 
          <Grid
- templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)", lg: "repeat(2, 1fr)", xl: "repeat(2, 1fr)"}}
+ templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(3, 1fr)", lg: "repeat(1, 1fr)", xl: "repeat(3, 1fr)"}}
  columnGap={{ base: "16px", lg: "22px" }}
  justifyItems="center"
  bg="#edf3f8"
@@ -13,78 +13,42 @@ export default function Products(){
  padding={{ base: "0 16px" }}
  paddingTop="40px"
       >
-        <Flex
-  bg="#edf3f8"
-  _dark={{
-    bg: "#3e3e3e",
-  }}
-  p={50}
-  w="full"
-  alignItems="center"
-  justifyContent="center"
->
-  <Box
- 
-    maxW="xs"
-    mx="auto"
-    bg="white"
-    _dark={{
-      bg: "gray.800",
-    }}
-    shadow="lg"
-    rounded="lg"
-    border={'1px'}
-    borderColor="black"
-    boxShadow={'6px 6px 0 black'}
-  >
-    <Box  px={4} py={2}>
-      <chakra.h1
-        color="gray.800"
-        _dark={{
-          color: "white",
-        }}
-        fontWeight="bold"
-        fontSize="3xl"
-        textTransform="uppercase"
-      >
-        CARBON DE LEÑA
-      </chakra.h1>
-      <chakra.p
-        mt={1}
-        fontSize="sm"
-        color="gray.600"
-        _dark={{
-          color: "gray.400",
-        }}
-      >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quos
-        quidem sequi illum facere recusandae voluptatibus
-      </chakra.p>
-    </Box>
-
-    <Image
-     pl={{ base: 12, md: 20,  }}
-      h="40%"
-      w="70%"
-      fit="contain"
-      mt={2}
-      pb={2}
-      src="https://i.postimg.cc/XqRbv6wT/bolsa-png.png"
-      alt="Carbon de leña del norte"
-    />
-
-    <Flex
-      alignItems="center"
-      justifyContent="space-between"
-      px={4}
-      py={2}
-      bg="white"
-      roundedBottom="lg"
-    >
-      <chakra.h1 color="white" fontWeight="bold" fontSize="lg">
         
-      </chakra.h1>
-      <Link href="https://wa.me/5491168678515?">
+        <Center py={12}>
+      <Box
+        role={'group'}
+        p={6}
+        maxW={'250'}
+        maxH={''}
+        w={'full'}
+        bg='gray.100'
+        boxShadow={'2xl'}
+        rounded={'lg'}
+        pos={'relative'}
+        zIndex={1}>
+      
+          <Image
+            rounded={'sm'}
+            height={240}
+            width={282}
+            alt="Carbon de leña de quebracho"
+            objectFit={'cover'}
+            src={'https://i.postimg.cc/d3rNT0Q9/bolsa1.png'}
+          />
+     
+        <Stack pt={10} align={'left'}>
+          
+          <Heading textAlign={'left'} fontSize={'2xl'} fontFamily={'body'} fontWeight={500}>
+            Carbón de Leña
+          </Heading>
+          <Stack direction={'row'} align={'center'}>
+            <Text fontWeight={400} fontSize={'md'}>
+            Lorem ipsum dolor sit amet consectetur adipiscing.
+            </Text>
+    
+          </Stack>
+
+          <Link href="https://wa.me/5491168678515?">
       <chakra.button
         px={2}
         py={1}
@@ -104,79 +68,44 @@ export default function Products(){
         Consultar
       </chakra.button>
       </Link>
-    </Flex>
-  </Box>
-</Flex>
-<Flex
-  bg="#edf3f8"
-  _dark={{
-    bg: "#3e3e3e",
-  }}
-  p={50}
-  w="full"
-  alignItems="center"
-  justifyContent="center"
->
-  <Box
-    maxW="xs"
-    mx="auto"
-    bg="white"
-    _dark={{
-      bg: "gray.800",
-    }}
-    shadow="lg"
-    rounded="lg"
-    border={'1px'}
-    borderColor="black"
-    boxShadow={'6px 6px 0 black'}
-  >
-    <Box px={4} py={2}>
-      <chakra.h1
-        color="gray.800"
-        _dark={{
-          color: "white",
-        }}
-        fontWeight="bold"
-        fontSize="3xl"
-        textTransform="uppercase"
-      >
-        Postes
-      </chakra.h1>
-      <chakra.p
-        mt={1}
-        fontSize="sm"
-        color="gray.600"
-        _dark={{
-          color: "gray.400",
-        }}
-      >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quos
-        quidem sequi illum facere recusandae voluptatibus
-      </chakra.p>
-    </Box>
+        </Stack>
+      </Box>
+    </Center>
+    <Center py={12}>
+      <Box
+        role={'group'}
+        p={6}
+        maxW={'250'}
+        maxH={''}
+        w={'full'}
+        bg='gray.100'
+        boxShadow={'2xl'}
+        rounded={'lg'}
+        pos={'relative'}
+        zIndex={1}>
+      
+          <Image
+            rounded={'sm'}
+            height={240}
+            width={282}
+            alt="Leña de quebracho"
+            objectFit={'cover'}
+            src={'https://i.postimg.cc/ZYdMQwPy/bolsa2.png'}
+          />
+     
+        <Stack pt={10} align={'left'}>
+          
+          <Heading textAlign={''} fontSize={'2xl'} fontFamily={'body'} fontWeight={500}>
+            Leña de quebracho
+          </Heading>
+          <Stack direction={'row'} align={'center'}>
+            <Text fontWeight={400} fontSize={'md'}>
+            Lorem ipsum dolor sit amet consectetur adipiscing.
+            </Text>
+    
+          </Stack>
 
-    <Image
-      h={48}
-      w="full"
-      fit="contain"
-      mt={2}
-      pb={2}
-      src="https://i.postimg.cc/NGSmZcTq/IMG-20221020-WA0012.jpg"
-      alt="Postes El Formoseño"
-    />
-
-    <Flex
-      alignItems="center"
-      justifyContent="space-between"
-      px={4}
-      py={2}
-      bg="white"
-      roundedBottom="lg"
-    >
-      <chakra.h1 color="white" fontWeight="bold" fontSize="lg">
-        
-      </chakra.h1>
-      <Link href="https://wa.me/5491168678515?">
+          <Link href="https://wa.me/5491168678515?">
       <chakra.button
         px={2}
         py={1}
@@ -187,7 +116,7 @@ export default function Products(){
         rounded="lg"
         textTransform="uppercase"
         _hover={{
-          bg: "gray.900",
+          bg: "gray.200",
         }}
         _focus={{
           bg: "gray.400",
@@ -196,9 +125,66 @@ export default function Products(){
         Consultar
       </chakra.button>
       </Link>
-    </Flex>
-  </Box>
-</Flex>
+        </Stack>
+      </Box>
+    </Center>
+    <Center py={12}>
+      <Box
+        role={'group'}
+        p={6}
+        maxW={'250'}
+        maxH={''}
+        w={'full'}
+        bg='gray.100'
+        boxShadow={'2xl'}
+        rounded={'lg'}
+        pos={'relative'}
+        zIndex={1}>
+      
+          <Image
+            rounded={'xl'}
+            height={240}
+            width={282}
+            alt="Leña de quebracho"
+            objectFit={'cover'}
+            src={'https://i.postimg.cc/bwxBH3xx/IMG-20221020-WA0012.jpg'}
+          />
+     
+        <Stack pt={10} align={'left'}>
+          
+          <Heading textAlign={''} fontSize={'2xl'} fontFamily={'body'} fontWeight={500}>
+            Postes
+          </Heading>
+          <Stack direction={'row'} align={'center'}>
+            <Text fontWeight={400} fontSize={'md'}>
+            Lorem ipsum dolor sit amet consectetur adipiscing.
+            </Text>
+    
+          </Stack>
+
+          <Link href="https://wa.me/5491168678515?">
+      <chakra.button
+        px={2}
+        py={1}
+        bg="brand.900"
+        fontSize="xs"
+        color="white"
+        fontWeight="bold"
+        rounded="lg"
+        textTransform="uppercase"
+        _hover={{
+          bg: "gray.200",
+        }}
+        _focus={{
+          bg: "gray.400",
+        }}
+      >
+        Consultar
+      </chakra.button>
+      </Link>
+        </Stack>
+      </Box>
+    </Center>
 
         </Grid>
         </>
