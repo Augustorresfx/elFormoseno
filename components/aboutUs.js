@@ -46,8 +46,7 @@ export default function AboutUs(){
           
           </Box>
           <Box
-            w="full"
-            h="full"
+           
             py={0}
             bg="gray.200"
             _dark={{ bg: "gray.700" }}
