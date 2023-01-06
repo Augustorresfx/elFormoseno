@@ -6,7 +6,7 @@ export default function AboutUs(){
   return (
 
       <Box
-        shadow="xl"
+   
         bg="white"
         _dark={{ bg: "gray.800" }}
         px={8}

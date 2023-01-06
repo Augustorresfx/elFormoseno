@@ -6,13 +6,13 @@ export default function Products(){
         
   <chakra.h2  
   bg="white"
-              mt={24}
+              mt={-24}
               ml={{base: 0, md:4, lg:8, }}
               mb={12}
               fontSize={{ base: "2xl", md: "4xl" }}
               fontWeight="extrabold"
               letterSpacing="tight"
-              textAlign={{ base: "center", md: "left" }}
+              textAlign={{ base: "center", md: "center" }}
               color="gray.900"
               _dark={{ color: "gray.400" }}
               lineHeight={{ md: "shorter" }}
@@ -45,17 +45,132 @@ export default function Products(){
       
           <Image
             rounded={'sm'}
-            height={240}
-            width={282}
-            alt="Carbon de leña de quebracho"
+            height={270}
+            width={292}
+            alt="Carbon vegetal"
             objectFit={'cover'}
-            src={'https://i.postimg.cc/d3rNT0Q9/bolsa1.png'}
+            src={'https://i.postimg.cc/W4NmhbqN/bolsa-papel-4kg.jpg'}
           />
      
         <Stack pt={10} align={'left'}>
           
           <Heading textAlign={'left'} fontSize={'2xl'} fontFamily={'body'} fontWeight={500}>
-            Carbón de Leña
+            Carbón vegetal
+          </Heading>
+          <Stack direction={'row'} align={'center'}>
+            <Text fontWeight={400} fontSize={'md'}>
+            En bolsa de papel de 4kg o de 5kg.
+            </Text>
+    
+          </Stack>
+
+          <Link href="https://wa.me/5491168678515?">
+      <chakra.button
+        px={2}
+        py={1}
+        bg="brand.900"
+        fontSize="xs"
+        color="white"
+        fontWeight="bold"
+        rounded="lg"
+        textTransform="uppercase"
+        _hover={{
+          bg: "gray.200",
+        }}
+        _focus={{
+          bg: "gray.400",
+        }}
+      >
+        Consultar
+      </chakra.button>
+      </Link>
+        </Stack>
+      </Box>
+    </Center>
+    <Center py={12}>
+      <Box
+        role={'group'}
+        p={6}
+        maxW={'250'}
+        maxH={''}
+        w={'full'}
+        bg='white'
+        boxShadow={'2xl'}
+        rounded={'lg'}
+        pos={'relative'}
+        zIndex={1}>
+      
+          <Image
+            rounded={'sm'}
+            height={270}
+            width={282}
+            alt="Postes"
+            objectFit={'cover'}
+            src={'https://i.postimg.cc/BvmTD92x/bolsa-naylon-5kg.jpg'}
+          />
+     
+        <Stack pt={10} align={'left'}>
+          
+          <Heading textAlign={''} fontSize={'2xl'} fontFamily={'body'} fontWeight={500}>
+            Carbón vegetal 5kg
+          </Heading>
+          <Stack direction={'row'} align={'center'}>
+            <Text fontWeight={400} fontSize={'md'}>
+            Lorem ipsum dolor sit amet consectetur adipiscing.
+            </Text>
+    
+          </Stack>
+
+          <Link href="https://wa.me/5491168678515?">
+      <chakra.button
+        px={2}
+        py={1}
+        bg="brand.900"
+        fontSize="xs"
+        color="white"
+        fontWeight="bold"
+        rounded="lg"
+        textTransform="uppercase"
+        _hover={{
+          bg: "gray.200",
+        }}
+        _focus={{
+          bg: "gray.400",
+        }}
+      >
+        Consultar
+      </chakra.button>
+      </Link>
+        </Stack>
+      </Box>
+    </Center>
+    
+    <Center py={12}>
+      <Box
+        role={'group'}
+        p={6}
+        maxW={'250'}
+        maxH={''}
+        w={'full'}
+        bg='white'
+        boxShadow={'2xl'}
+        rounded={'lg'}
+        pos={'relative'}
+        zIndex={1}>
+      
+          <Image
+            rounded={'sm'}
+            height={264}
+            width={282}
+            alt="Postes"
+            objectFit={'cover'}
+            src={'https://i.postimg.cc/mgNNLFDp/bolsa-naylon-3kg.jpg'}
+          />
+     
+        <Stack pt={10} align={'left'}>
+          
+          <Heading textAlign={''} fontSize={'2xl'} fontFamily={'body'} fontWeight={500}>
+            Carbón vegetal 3kg 
           </Heading>
           <Stack direction={'row'} align={'center'}>
             <Text fontWeight={400} fontSize={'md'}>
@@ -106,7 +221,7 @@ export default function Products(){
             width={282}
             alt="Leña de quebracho"
             objectFit={'cover'}
-            src={'https://i.postimg.cc/ZYdMQwPy/bolsa2.png'}
+            src={'https://i.postimg.cc/BQBK8498/le-a-quebracho.jpg'}
           />
      
         <Stack pt={10} align={'left'}>
@@ -116,7 +231,7 @@ export default function Products(){
           </Heading>
           <Stack direction={'row'} align={'center'}>
             <Text fontWeight={400} fontSize={'md'}>
-            Lorem ipsum dolor sit amet consectetur adipiscing.
+            En bolsa de 10kg, o a granel.
             </Text>
     
           </Stack>
@@ -158,22 +273,22 @@ export default function Products(){
         zIndex={1}>
       
           <Image
-            rounded={'xl'}
+            rounded={'sm'}
             height={240}
             width={282}
-            alt="Leña de quebracho"
+            alt="Leña de quebracho para calefaccion y asado"
             objectFit={'cover'}
-            src={'https://i.postimg.cc/bwxBH3xx/IMG-20221020-WA0012.jpg'}
+            src={'https://i.postimg.cc/qB9h6M6s/lena-quebracho-colorado.jpg'}
           />
      
         <Stack pt={10} align={'left'}>
           
           <Heading textAlign={''} fontSize={'2xl'} fontFamily={'body'} fontWeight={500}>
-            Postes
+            Leña de quebracho
           </Heading>
           <Stack direction={'row'} align={'center'}>
             <Text fontWeight={400} fontSize={'md'}>
-            Lorem ipsum dolor sit amet consectetur adipiscing.
+            En bolsa de 10kg, o a granel.
             </Text>
     
           </Stack>
@@ -201,7 +316,63 @@ export default function Products(){
         </Stack>
       </Box>
     </Center>
+    <Center py={12}>
+      <Box
+        role={'group'}
+        p={6}
+        maxW={'250'}
+        maxH={''}
+        w={'full'}
+        bg='white'
+        boxShadow={'2xl'}
+        rounded={'lg'}
+        pos={'relative'}
+        zIndex={1}>
+      
+          <Image
+            rounded={'sm'}
+            height={240}
+            width={282}
+            alt="Postes"
+            objectFit={'cover'}
+            src={'https://i.postimg.cc/bwxBH3xx/IMG-20221020-WA0012.jpg'}
+          />
+     
+        <Stack pt={10} align={'left'}>
+          
+          <Heading textAlign={''} fontSize={'2xl'} fontFamily={'body'} fontWeight={500}>
+            Postes
+          </Heading>
+          <Stack direction={'row'} align={'center'}>
+            <Text fontWeight={400} fontSize={'md'}>
+            Postes de quebracho.
+            </Text>
+    
+          </Stack>
 
+          <Link href="https://wa.me/5491168678515?">
+      <chakra.button
+        px={2}
+        py={1}
+        bg="brand.900"
+        fontSize="xs"
+        color="white"
+        fontWeight="bold"
+        rounded="lg"
+        textTransform="uppercase"
+        _hover={{
+          bg: "gray.200",
+        }}
+        _focus={{
+          bg: "gray.400",
+        }}
+      >
+        Consultar
+      </chakra.button>
+      </Link>
+        </Stack>
+      </Box>
+    </Center>
         </Grid>
         </>
     )
