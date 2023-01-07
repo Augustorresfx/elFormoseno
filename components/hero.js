@@ -71,7 +71,7 @@ export default function Hero(){
           Entregamos en Mar del Plata y alrededores.
         </chakra.p>
        
-        <Link zIndex={1} legacyBehavior href={`https://wa.me/5491168678515?`}>
+        <Link zIndex={1} legacyBehavior href={"https://wa.me/5492236356514?"}>
         <Box display="inline-flex" rounded="md" shadow="md">
           <chakra.a
             mt={2}

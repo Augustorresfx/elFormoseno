@@ -15,7 +15,7 @@ import { GiCampfire } from 'react-icons/gi'
 
 export default function Features(){
     return (
-        <Container pos={"relative"} marginBottom="200" maxW="6xl" p={{ base: 5, md: 10 }}>
+        <Container pos={"relative"} marginBottom={{ base: 20, sm: 40, md: 160 }} maxW="6xl" p={{ base: 5, md: 10 }}>
           <chakra.h3 fontSize="4xl" fontWeight="bold" mb={20} textAlign="center">
             Por qué elegirnos
           </chakra.h3>

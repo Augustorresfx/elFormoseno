@@ -9,7 +9,7 @@ import { TbMailForward } from 'react-icons/tb'
 
 const ContactForm = () => {
 
-  const { hasCopied, onCopy } = useClipboard('webly.contact@gmail.com');
+  const { hasCopied, onCopy } = useClipboard('torresgustavomariano@yahoo.com.ar');
 
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
@@ -101,7 +101,7 @@ id="contact">
 
         
 
-          <Link href="https://wa.me/5491168678515?">
+          <Link href="https://wa.me/5492236356514?">
             <IconButton
               aria-label="twitter"
               variant="ghost"

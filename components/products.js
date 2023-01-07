@@ -4,22 +4,9 @@ export default function Products(){
     return(
         <>
         
-  <chakra.h2  
-  bg="white"
-  pos={"relative"}
-              mt={-24}
-              ml={{base: 0, md:4, lg:8, }}
-              mb={12}
-              fontSize={{ base: "2xl", md: "4xl" }}
-              fontWeight="extrabold"
-              letterSpacing="tight"
-              textAlign={{ base: "center", md: "center" }}
-              color="gray.900"
-              _dark={{ color: "gray.400" }}
-              lineHeight={{ md: "shorter" }}
-            >
+        <chakra.h3 fontSize="4xl" fontWeight="bold" mb={20} textAlign="center">
             Nuestros Productos
-            </chakra.h2>
+          </chakra.h3>
            
          <Grid
  templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(3, 1fr)", lg: "repeat(1, 1fr)", xl: "repeat(3, 1fr)"}}
@@ -65,7 +52,7 @@ export default function Products(){
     
           </Stack>
 
-          <Link href="https://wa.me/5491168678515?">
+          <Link href="https://wa.me/5492236356514?">
       <chakra.button
         px={2}
         py={1}
@@ -122,7 +109,7 @@ export default function Products(){
     
           </Stack>
 
-          <Link href="https://wa.me/5491168678515?">
+          <Link href="https://wa.me/5492236356514?">
       <chakra.button
         px={2}
         py={1}
@@ -180,7 +167,7 @@ export default function Products(){
     
           </Stack>
 
-          <Link href="https://wa.me/5491168678515?">
+          <Link href="https://wa.me/5492236356514?">
       <chakra.button
         px={2}
         py={1}
@@ -237,7 +224,7 @@ export default function Products(){
     
           </Stack>
 
-          <Link href="https://wa.me/5491168678515?">
+          <Link href="https://wa.me/5492236356514?">
       <chakra.button
         px={2}
         py={1}
@@ -294,7 +281,7 @@ export default function Products(){
     
           </Stack>
 
-          <Link href="https://wa.me/5491168678515?">
+          <Link href="https://wa.me/5492236356514?">
       <chakra.button
         px={2}
         py={1}
@@ -351,7 +338,7 @@ export default function Products(){
     
           </Stack>
 
-          <Link href="https://wa.me/5491168678515?">
+          <Link href="https://wa.me/5492236356514?">
       <chakra.button
         px={2}
         py={1}

@@ -30,7 +30,7 @@ const mailData = {
         name: req.body.name,
         address: "agustorres633@gmail.com",
     },
-    to: "webly.contact@gmail.com",
+    to: "torresgustavomariano@yahoo.com.ar",
     subject: `Mensaje de formulario`,
     text: req.body.message + " | Enviado por: " + req.body.email,
     html: `<div>${req.body.message}</div><p>Enviado por: ${req.body.email}</p><p>Teléfono: ${req.body.phone}<p>`,
