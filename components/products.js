@@ -6,6 +6,7 @@ export default function Products(){
         
   <chakra.h2  
   bg="white"
+  pos={"relative"}
               mt={-24}
               ml={{base: 0, md:4, lg:8, }}
               mb={12}
@@ -116,7 +117,7 @@ export default function Products(){
           </Heading>
           <Stack direction={'row'} align={'center'}>
             <Text fontWeight={400} fontSize={'md'}>
-            Lorem ipsum dolor sit amet consectetur adipiscing.
+            En bolsa de naylon de 5kg.
             </Text>
     
           </Stack>
@@ -174,7 +175,7 @@ export default function Products(){
           </Heading>
           <Stack direction={'row'} align={'center'}>
             <Text fontWeight={400} fontSize={'md'}>
-            Lorem ipsum dolor sit amet consectetur adipiscing.
+            En bolsa de naylon de 3kg.
             </Text>
     
           </Stack>
@@ -221,13 +222,13 @@ export default function Products(){
             width={282}
             alt="Leña de quebracho"
             objectFit={'cover'}
-            src={'https://i.postimg.cc/BQBK8498/le-a-quebracho.jpg'}
+            src={'https://i.postimg.cc/7brLVdBY/bois-buches-1-stere-de-50-cm-1.jpg'}
           />
      
         <Stack pt={10} align={'left'}>
           
           <Heading textAlign={''} fontSize={'2xl'} fontFamily={'body'} fontWeight={500}>
-            Leña de quebracho
+            Leña de algarrobo
           </Heading>
           <Stack direction={'row'} align={'center'}>
             <Text fontWeight={400} fontSize={'md'}>

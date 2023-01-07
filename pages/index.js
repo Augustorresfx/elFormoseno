@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import AboutUs from '../components/aboutUs'
 import ContactForm from '../components/contact'
+import Features from '../components/features'
 import Footer from '../components/footer'
 import Hero from '../components/hero'
 import Navbar from '../components/navbar'
@@ -15,7 +16,8 @@ export default function Home() {
 
     <Hero/>
     <section id='PorQueElegirnos'>
-    <AboutUs/>
+    <Features/>
+  
     </section>
     <section id="Productos">
     <Products/>
